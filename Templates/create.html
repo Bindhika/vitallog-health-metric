@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+    <a href="/export_metrics" class="btn btn-secondary">Export Metrics to CSV</a>
+    <title>Add Metric</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add a Metric</h1>
+    <form method="POST">
+        <label for="metric_type">Metric Type:</label>
+        <select name="metric_type" id="metric_type" required>
+            <option value="">Select Metric Type</option>
+            <option value="Weight">Weight</option>
+            <option value="Blood Pressure">Blood Pressure</option>
+        </select>
+        <label for="value">Value:</label>
+        <input type="text" name="value" id="value" required>
+        <label for="unit">Unit:</label>
+        <input type="text" name="unit" id="unit" required>
+        <button type="submit">Add Metric</button>
+    </form>
+</body>
+</html>
