@@ -1,0 +1,6 @@
+Flask==2.2.3                 # Web framework
+Flask-SQLAlchemy==2.5.1      # ORM for database management
+Flask-Migrate==4.0.4         # Database migrations
+Flask-Login==0.6.2           # User session handling
+matplotlib==3.7.1            # Data visualization
+python-dotenv==1.0.0         # Environment variable management (optional)
