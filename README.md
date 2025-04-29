@@ -37,6 +37,40 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 - Install dependencies:pip install -r requirements.txt
 
 - Run the application:python app.py
+- Usage
+- Open your web browser and navigate to http://127.0.0.1:5000/.
+- Use the interface to add, view, update, or delete health metrics.
+- Generate graphs by visiting /metrics_chart to see trends.
+
+Project Structure
+project/
+├── app.py                # Main application file
+├── models.py             # Database models
+├── templates/            # HTML templates
+│   ├── index.html        # Home page
+│   ├── create.html       # Add metric page
+│   ├── metrics.html      # View metrics page
+│   ├── update.html       # Update metric page
+│   ├── metrics_chart.html # Graph display page
+├── static/               # Static assets (CSS, JS, images)
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+
+
+Contributing
+Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+### Instructions:
+1. Copy this `README.md` into the root directory of your project.
+2. Update the repository URL (`https://github.com/your-username/vital-log.git`) with your actual GitHub repository URL.
+3. Modify any section (e.g., Technologies Used, Features) to match your project specifics.
+
+
+
 
 
 
