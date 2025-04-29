@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Metric</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Metric</h1>
+    <form method="POST">
+        <label for="value">Value:</label>
+        <input type="text" name="value" id="value" value="{{ metric.value }}" required>
+        <label for="unit">Unit:</label>
+        <input type="text" name="unit" id="unit" value="{{ metric.unit }}" required>
+        <button type="submit">Update Metric</button>
+    </form>
+</body>
+</html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
